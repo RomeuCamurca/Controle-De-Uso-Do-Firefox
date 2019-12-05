@@ -13,7 +13,18 @@
 
 ## 3 - Requisitos Para Executar o Script
 * Ter acesso via ssh sem senha configurado pela máquina que irá monitar as demais.
-- Tutorial para acesso via ssh sem senha:
+Tutorial para acesso via ssh sem senha:
+
+Na máquina que irá acessar as outras faça o seguinte:
+
+Instale o ssh
+sudo apt install openssh-server
+
+
+Gere as chaves pública e privada
+
+ssh-keygen -t rsa
+
 
 
 
