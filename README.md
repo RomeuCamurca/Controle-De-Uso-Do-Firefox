@@ -15,16 +15,30 @@
 * Ter acesso via ssh sem senha configurado pela máquina que irá monitar as demais.
 Tutorial para acesso via ssh sem senha:
 
-Na máquina que irá acessar as outras faça o seguinte:
+- Na máquina que irá acessar as outras faça o seguinte:
+
 
 Instale o ssh
-sudo apt install openssh-server
 
+sudo apt install openssh-server
 
 Gere as chaves pública e privada
 
 ssh-keygen -t rsa
 
+Essas chaves encontram-se no diretório /home/seuUsuario/.ssh/
+
+A chave pública terá o nome de id_rsa.pub
+
+Envie essa chave pública para a máquina que será acessada. Pode-se utilizar o comando SCP
+
+scp /home/seuUsuario/.ssh/id_rsa.pub usuarioDaMaquinaDestino@IPdaMaquinaDestino:caminhoQueAChaveSeraSalva
+
+Exemplo:
+scp /home/romeu/.ssh/id_rsa.pub aluno@200.129.39.83:/home/aluno/
+
+
+- Na máquina que será acessada faça o seguinte:
 
 
 
