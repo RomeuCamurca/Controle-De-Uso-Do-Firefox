@@ -40,6 +40,34 @@ scp /home/romeu/.ssh/id_rsa.pub aluno@200.129.39.83:/home/aluno/
 
 - Na máquina que será acessada faça o seguinte:
 
+Instale o ssh
+sudo apt install openssh-server
+
+Verifique se a máquina recebeu a chave com o comando 'ls' no diretório de destino
+
+Exemplo:
+ls /home/romeu
+
+Se estiver tudo ok, execute o seguinte comando
+
+cat /home/romeu/id_rsa.pub >> /home/romeu/.ssh/authorized_keys
+
+O comando acima adicionará o conteúdo da chave pública ao arquivo authorized_keys. Esse arquivo é responsável por guardar as chaves públicas das máquinas que terão permissão de executar o acesso SSH sem senha na máquina destino.
+
+
+Feito isso, reinicie o serviço do SSH e verifique se o serviço está rodando corretamente com os comandos:
+
+sudo service ssh restart
+sudo service ssh status
+
+Feito tudo isso, volte a máquina de origem (que fará o acesso SSH) e execute o comando:
+
+ssh usuarioDeDestino@IPDeDestino
+
+Exemplo:
+ssh aluno@200.129.39.83
+
+Se tudo foi feito corretamente, você terá acesso SSH sem senha.
 
 
 * Utilizar o cron para agendar a verificação de acordo com a necessidade.
