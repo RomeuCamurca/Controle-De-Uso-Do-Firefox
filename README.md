@@ -82,11 +82,15 @@ Possui seis colunas (Campos)
 Minuto, Hora, Dia, Mês, Dias da semana e Comando
 
 Minuto: Valores de 0 a 59 e o caracter curinga (*)
-Hora: Valores de 0 a 23 ou *
-Dia: Valores de 1 a 31 ou *
-Mês: 1 a 12, Jan a Dec, jan a dec ou *
-Dia da Semana: 0 a 7, Sun a Sat, sun a sat ou *
-Comando: O comando a ser executado ou script.
 
+Hora: Valores de 0 a 23 ou *
+
+Dia: Valores de 1 a 31 ou *
+
+Mês: 1 a 12, Jan a Dec, jan a dec ou *
+
+Dia da Semana: 0 a 7, Sun a Sat, sun a sat ou *
+
+Comando: O comando a ser executado ou script.
 
 * Sistema operacional - alguma distribuição linux, como por exemplo: Ubuntu, mint, Debian etc.
