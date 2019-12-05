@@ -12,4 +12,6 @@
 * Caso nas últimas três verificações o usuário estivesse com o Firefox ativo, deve encessar a seção do usuário.
 
 ## 3 - Requisitos Para Executar o Script
-* Ter acesso via
+* Ter acesso via ssh sem senha configurado pela máquina que irá monitar as demais.
+* Utilizar o cron para agendar a verificação de acordo com a necessidade.
+* Sistema operacional - alguma distribuição linux, como por exemplo: Ubuntu, mint, Debian etc.
