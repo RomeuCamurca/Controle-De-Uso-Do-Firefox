@@ -71,4 +71,10 @@ Se tudo foi feito corretamente, você terá acesso SSH sem senha.
 
 
 * Utilizar o cron para agendar a verificação de acordo com a necessidade.
+Como criar tarefas no Cron:
+
+Comando crontab -e, serve para editar as tarefas.
+
+Ver sua tabela crontab: crontab -l
+
 * Sistema operacional - alguma distribuição linux, como por exemplo: Ubuntu, mint, Debian etc.
